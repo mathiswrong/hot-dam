@@ -72,7 +72,7 @@ export function AssetDetail({ asset }: { asset: Asset }) {
     e.preventDefault();
     const text = newComment.trim();
     if (!text) return;
-    const res = await fetch(`/api/assets/${meta.id}/comment`, {
+    const res = await fetch(`/api/comments/${meta.id}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text }),

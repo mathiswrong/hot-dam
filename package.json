@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "dropbox": "^10.34.0",
-    "next": "14.2.18",
+    "next": "^14.2.35",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "swr": "^2.2.5",
@@ -23,7 +23,7 @@
     "@types/uuid": "^9.0.8",
     "autoprefixer": "^10.4.20",
     "eslint": "^8",
-    "eslint-config-next": "14.2.18",
+    "eslint-config-next": "^14.2.35",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
