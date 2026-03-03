@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: 15 23 42;
+  --background: 248 250 252;
+  --brand: 239 107 42;
+  --brand-hover: 224 81 31;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: 248 250 252;
+    --background: 15 23 42;
+  }
+}
+
+body {
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Hot DAM brand accent for key interactive elements */
+.btn-brand {
+  @apply rounded-lg bg-brand-500 px-4 py-2 font-semibold text-white shadow-sm transition hover:bg-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2;
+}
+
+.link-brand {
+  @apply font-medium text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300;
+}
